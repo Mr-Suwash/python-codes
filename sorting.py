@@ -1,0 +1,7 @@
+lsts = input("Enter the array:").split()
+lsts.sort()
+print("The array in ascending order:")
+print(lsts)
+lsts.sort(reverse=True)
+print("The array in descending order:")
+print(lsts)

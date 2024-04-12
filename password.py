@@ -10,7 +10,7 @@ nu = int(input(f"How many numbers would you like?\n"))
 
 passlist=[]
 for i in range(0,le+1):
-    passlist.append(random.choice(letters))
+    passlist+=random.choice(letters)
 for i in range(0,nu+1):
     passlist+=random.choice(numbers)
 for i in range(0,sy+1):

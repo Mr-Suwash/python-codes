@@ -1,0 +1,26 @@
+#HANGMAN
+import random
+letters = [ 'APPLE','BANANA','CROCORDILE']
+words=random.choice(letters)
+live=6
+display=[]
+for i in words:
+    display+="_"
+print(display)
+eog=False
+while not eog:
+    word =input("Enter a letter in word:: ").upper()
+    for i in range(len(words)):
+        letter=words[i]
+        if letter==word:
+            display[i]=letter
+    if word not in words:
+        live-=1
+        if live==0:
+            eog=True
+            print("You loose")
+            break
+    print(display)
+    if "_" not in display:
+        eog = True
+        print("You won!!!")

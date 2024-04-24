@@ -1,0 +1,20 @@
+import time
+import random
+n=0
+add=""
+output=[]
+outpu=input("enter the word ")
+output+=str(outpu)
+digit=[' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+#for i in range(len(arr)):
+
+while n<len(output):
+    word=random.choice(digit)
+    if word==output[n]:
+        add+=word
+        n+=1
+        print(add)
+        time.sleep(1/50)
+    else:
+        print(f"{add}{word}")
+        time.sleep(1/50)
